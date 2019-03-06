@@ -1,0 +1,2 @@
+# samify
+SAMify Firefox Extension
