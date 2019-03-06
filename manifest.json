@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "SAMify",
+  "version": "1.0",
+
+  "description": "Adds self-adapting capabilities to webpages using the SAM framework",
+  "permissions": [ "<all_urls>", "tabs", "activeTab", "storage", "webNavigation" ],
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["awm.css"],
+      "js": ["jquery-3.3.1.js","awm.js", "wikipedia.js", "craigslist.js", "uiaalto.js", "google.js"]
+    }
+  ]
+
+}
+
+
+
+
